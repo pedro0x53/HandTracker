@@ -8,6 +8,7 @@
 import SwiftUI
 import ARKit
 import RealityKit
+import HandSuite
 
 struct ImmersiveView: View {
     public static let identifier = "ImmersiveSpace"

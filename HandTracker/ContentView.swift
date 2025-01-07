@@ -7,6 +7,7 @@
 
 import SwiftUI
 import RealityKit
+import HandSuite
 
 struct ContentView: View {
     @State private var showImmersiveSpace = false
