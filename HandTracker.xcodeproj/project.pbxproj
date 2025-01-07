@@ -1,0 +1,617 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 60;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FE5364602CF4B24F00D4C101 /* HandTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE53645F2CF4B24F00D4C101 /* HandTrackerApp.swift */; };
+		FE5364622CF4B24F00D4C101 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5364612CF4B24F00D4C101 /* ContentView.swift */; };
+		FE5364642CF4B24F00D4C101 /* ImmersiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5364632CF4B24F00D4C101 /* ImmersiveView.swift */; };
+		FE5364662CF4B25100D4C101 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE5364652CF4B25100D4C101 /* Assets.xcassets */; };
+		FE5364692CF4B25100D4C101 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE5364682CF4B25100D4C101 /* Preview Assets.xcassets */; };
+		FEBDF2DC2D2DCDCD007205ED /* HandSuite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEBDF2D92D2DCB72007205ED /* HandSuite.framework */; };
+		FEBDF2DD2D2DCDCD007205ED /* HandSuite.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FEBDF2D92D2DCB72007205ED /* HandSuite.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FEBDF2D82D2DCB72007205ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FEBDF2A82D2DCB72007205ED /* HandSuite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FE1F36922D2D6A3B00420DA5;
+			remoteInfo = HandSuite;
+		};
+		FEBDF2DA2D2DCB72007205ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FEBDF2A82D2DCB72007205ED /* HandSuite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FE1F369A2D2D6A3B00420DA5;
+			remoteInfo = HandSuiteTests;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FEBDF2DE2D2DCDCD007205ED /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				FEBDF2DD2D2DCDCD007205ED /* HandSuite.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		FE5364582CF4B24F00D4C101 /* HandTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HandTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE53645F2CF4B24F00D4C101 /* HandTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandTrackerApp.swift; sourceTree = "<group>"; };
+		FE5364612CF4B24F00D4C101 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FE5364632CF4B24F00D4C101 /* ImmersiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImmersiveView.swift; sourceTree = "<group>"; };
+		FE5364652CF4B25100D4C101 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FE5364682CF4B25100D4C101 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FE53646A2CF4B25100D4C101 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FEBDF28E2D2DCB72007205ED /* FingerDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FingerDescription.swift; sourceTree = "<group>"; };
+		FEBDF28F2D2DCB72007205ED /* GestureStepDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestureStepDescription.swift; sourceTree = "<group>"; };
+		FEBDF2912D2DCB72007205ED /* Chirality.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chirality.swift; sourceTree = "<group>"; };
+		FEBDF2922D2DCB72007205ED /* Directions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Directions.swift; sourceTree = "<group>"; };
+		FEBDF2932D2DCB72007205ED /* GestureDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestureDescription.swift; sourceTree = "<group>"; };
+		FEBDF2942D2DCB72007205ED /* State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
+		FEBDF2962D2DCB72007205ED /* HandSkeleton+reciprocal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HandSkeleton+reciprocal.swift"; sourceTree = "<group>"; };
+		FEBDF2972D2DCB72007205ED /* ModelEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelEntity.swift; sourceTree = "<group>"; };
+		FEBDF2992D2DCB72007205ED /* HandGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandGesture.swift; sourceTree = "<group>"; };
+		FEBDF29B2D2DCB72007205ED /* Finger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Finger.swift; sourceTree = "<group>"; };
+		FEBDF29C2D2DCB72007205ED /* Hand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hand.swift; sourceTree = "<group>"; };
+		FEBDF29D2D2DCB72007205ED /* HandEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandEvent.swift; sourceTree = "<group>"; };
+		FEBDF29E2D2DCB72007205ED /* Joint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Joint.swift; sourceTree = "<group>"; };
+		FEBDF2A02D2DCB72007205ED /* GestureScheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestureScheme.swift; sourceTree = "<group>"; };
+		FEBDF2A22D2DCB72007205ED /* HandSuite.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HandSuite.h; sourceTree = "<group>"; };
+		FEBDF2A32D2DCB72007205ED /* HandSuite+HandSuiteActor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HandSuite+HandSuiteActor.swift"; sourceTree = "<group>"; };
+		FEBDF2A42D2DCB72007205ED /* Tracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tracker.swift; sourceTree = "<group>"; };
+		FEBDF2A62D2DCB72007205ED /* HandSuiteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandSuiteTests.swift; sourceTree = "<group>"; };
+		FEBDF2A82D2DCB72007205ED /* HandSuite.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = HandSuite.xcodeproj; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FE5364552CF4B24F00D4C101 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEBDF2DC2D2DCDCD007205ED /* HandSuite.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FE53644F2CF4B24F00D4C101 = {
+			isa = PBXGroup;
+			children = (
+				FE53645A2CF4B24F00D4C101 /* HandTracker */,
+				FEBDF28B2D2DCB71007205ED /* Frameworks */,
+				FE5364592CF4B24F00D4C101 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FE5364592CF4B24F00D4C101 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FE5364582CF4B24F00D4C101 /* HandTracker.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FE53645A2CF4B24F00D4C101 /* HandTracker */ = {
+			isa = PBXGroup;
+			children = (
+				FE53645F2CF4B24F00D4C101 /* HandTrackerApp.swift */,
+				FE5364612CF4B24F00D4C101 /* ContentView.swift */,
+				FE5364632CF4B24F00D4C101 /* ImmersiveView.swift */,
+				FE5364652CF4B25100D4C101 /* Assets.xcassets */,
+				FE53646A2CF4B25100D4C101 /* Info.plist */,
+				FE5364672CF4B25100D4C101 /* Preview Content */,
+			);
+			path = HandTracker;
+			sourceTree = "<group>";
+		};
+		FE5364672CF4B25100D4C101 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FE5364682CF4B25100D4C101 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FEBDF28B2D2DCB71007205ED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FEBDF2A92D2DCB72007205ED /* HandSuite */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FEBDF28C2D2DCB72007205ED /* xcode */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = xcode;
+			sourceTree = "<group>";
+		};
+		FEBDF28D2D2DCB72007205ED /* .swiftpm */ = {
+			isa = PBXGroup;
+			children = (
+				FEBDF28C2D2DCB72007205ED /* xcode */,
+			);
+			path = .swiftpm;
+			sourceTree = "<group>";
+		};
+		FEBDF2902D2DCB72007205ED /* Descriptions */ = {
+			isa = PBXGroup;
+			children = (
+				FEBDF28E2D2DCB72007205ED /* FingerDescription.swift */,
+				FEBDF28F2D2DCB72007205ED /* GestureStepDescription.swift */,
+			);
+			path = Descriptions;
+			sourceTree = "<group>";
+		};
+		FEBDF2952D2DCB72007205ED /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				FEBDF2912D2DCB72007205ED /* Chirality.swift */,
+				FEBDF2922D2DCB72007205ED /* Directions.swift */,
+				FEBDF2932D2DCB72007205ED /* GestureDescription.swift */,
+				FEBDF2942D2DCB72007205ED /* State.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		FEBDF2982D2DCB72007205ED /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FEBDF2962D2DCB72007205ED /* HandSkeleton+reciprocal.swift */,
+				FEBDF2972D2DCB72007205ED /* ModelEntity.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FEBDF29A2D2DCB72007205ED /* Gestures */ = {
+			isa = PBXGroup;
+			children = (
+				FEBDF2992D2DCB72007205ED /* HandGesture.swift */,
+			);
+			path = Gestures;
+			sourceTree = "<group>";
+		};
+		FEBDF29F2D2DCB72007205ED /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FEBDF29B2D2DCB72007205ED /* Finger.swift */,
+				FEBDF29C2D2DCB72007205ED /* Hand.swift */,
+				FEBDF29D2D2DCB72007205ED /* HandEvent.swift */,
+				FEBDF29E2D2DCB72007205ED /* Joint.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FEBDF2A12D2DCB72007205ED /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				FEBDF2A02D2DCB72007205ED /* GestureScheme.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		FEBDF2A52D2DCB72007205ED /* HandSuite */ = {
+			isa = PBXGroup;
+			children = (
+				FEBDF2902D2DCB72007205ED /* Descriptions */,
+				FEBDF2952D2DCB72007205ED /* Enums */,
+				FEBDF2982D2DCB72007205ED /* Extensions */,
+				FEBDF29A2D2DCB72007205ED /* Gestures */,
+				FEBDF29F2D2DCB72007205ED /* Models */,
+				FEBDF2A12D2DCB72007205ED /* Protocols */,
+				FEBDF2A22D2DCB72007205ED /* HandSuite.h */,
+				FEBDF2A32D2DCB72007205ED /* HandSuite+HandSuiteActor.swift */,
+				FEBDF2A42D2DCB72007205ED /* Tracker.swift */,
+			);
+			path = HandSuite;
+			sourceTree = "<group>";
+		};
+		FEBDF2A72D2DCB72007205ED /* HandSuiteTests */ = {
+			isa = PBXGroup;
+			children = (
+				FEBDF2A62D2DCB72007205ED /* HandSuiteTests.swift */,
+			);
+			path = HandSuiteTests;
+			sourceTree = "<group>";
+		};
+		FEBDF2A92D2DCB72007205ED /* HandSuite */ = {
+			isa = PBXGroup;
+			children = (
+				FEBDF28D2D2DCB72007205ED /* .swiftpm */,
+				FEBDF2A52D2DCB72007205ED /* HandSuite */,
+				FEBDF2A72D2DCB72007205ED /* HandSuiteTests */,
+				FEBDF2A82D2DCB72007205ED /* HandSuite.xcodeproj */,
+			);
+			name = HandSuite;
+			path = ../HandSuite;
+			sourceTree = "<group>";
+		};
+		FEBDF2AA2D2DCB72007205ED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FEBDF2D92D2DCB72007205ED /* HandSuite.framework */,
+				FEBDF2DB2D2DCB72007205ED /* HandSuiteTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FE5364572CF4B24F00D4C101 /* HandTracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE53646D2CF4B25100D4C101 /* Build configuration list for PBXNativeTarget "HandTracker" */;
+			buildPhases = (
+				FE5364542CF4B24F00D4C101 /* Sources */,
+				FE5364552CF4B24F00D4C101 /* Frameworks */,
+				FE5364562CF4B24F00D4C101 /* Resources */,
+				FEBDF2DE2D2DCDCD007205ED /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HandTracker;
+			packageProductDependencies = (
+			);
+			productName = HandTracker;
+			productReference = FE5364582CF4B24F00D4C101 /* HandTracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FE5364502CF4B24F00D4C101 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					FE5364572CF4B24F00D4C101 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = FE5364532CF4B24F00D4C101 /* Build configuration list for PBXProject "HandTracker" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				de,
+				he,
+				en_AU,
+				ar,
+				el,
+				ja,
+				uk,
+				es_419,
+				zh_CN,
+				es,
+				pt_BR,
+				da,
+				it,
+				sk,
+				pt_PT,
+				ms,
+				sv,
+				cs,
+				ko,
+				no,
+				hu,
+				zh_HK,
+				tr,
+				pl,
+				zh_TW,
+				en_GB,
+				vi,
+				ru,
+				fr_CA,
+				fr,
+				fi,
+				id,
+				nl,
+				th,
+				ro,
+				hr,
+				hi,
+				ca,
+				"zh-Hant-HK",
+				nb,
+				pt,
+				"zh-Hans",
+				"zh-HK",
+				"en-GB",
+				"fr-CA",
+				"zh-Hant",
+				"en-AU",
+				"es-MX",
+				"pt-PT",
+			);
+			mainGroup = FE53644F2CF4B24F00D4C101;
+			packageReferences = (
+				FE1F36852D2C794900420DA5 /* XCLocalSwiftPackageReference "../HandSuite" */,
+				FEBDF2DF2D2DCE03007205ED /* XCLocalSwiftPackageReference "Packages/RealityKitContent" */,
+			);
+			productRefGroup = FE5364592CF4B24F00D4C101 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = FEBDF2AA2D2DCB72007205ED /* Products */;
+					ProjectRef = FEBDF2A82D2DCB72007205ED /* HandSuite.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				FE5364572CF4B24F00D4C101 /* HandTracker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		FEBDF2D92D2DCB72007205ED /* HandSuite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = HandSuite.framework;
+			remoteRef = FEBDF2D82D2DCB72007205ED /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FEBDF2DB2D2DCB72007205ED /* HandSuiteTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = HandSuiteTests.xctest;
+			remoteRef = FEBDF2DA2D2DCB72007205ED /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FE5364562CF4B24F00D4C101 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE5364692CF4B25100D4C101 /* Preview Assets.xcassets in Resources */,
+				FE5364662CF4B25100D4C101 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FE5364542CF4B24F00D4C101 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE5364622CF4B24F00D4C101 /* ContentView.swift in Sources */,
+				FE5364602CF4B24F00D4C101 /* HandTrackerApp.swift in Sources */,
+				FE5364642CF4B24F00D4C101 /* ImmersiveView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		FE53646B2CF4B25100D4C101 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = xros;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				XROS_DEPLOYMENT_TARGET = 1.2;
+			};
+			name = Debug;
+		};
+		FE53646C2CF4B25100D4C101 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = xros;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+				XROS_DEPLOYMENT_TARGET = 1.2;
+			};
+			name = Release;
+		};
+		FE53646E2CF4B25100D4C101 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"HandTracker/Preview Content\"";
+				DEVELOPMENT_TEAM = TF4K4YZ8PT;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pedro0x53.HandTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+			};
+			name = Debug;
+		};
+		FE53646F2CF4B25100D4C101 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"HandTracker/Preview Content\"";
+				DEVELOPMENT_TEAM = TF4K4YZ8PT;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pedro0x53.HandTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FE5364532CF4B24F00D4C101 /* Build configuration list for PBXProject "HandTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE53646B2CF4B25100D4C101 /* Debug */,
+				FE53646C2CF4B25100D4C101 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE53646D2CF4B25100D4C101 /* Build configuration list for PBXNativeTarget "HandTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE53646E2CF4B25100D4C101 /* Debug */,
+				FE53646F2CF4B25100D4C101 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		FE1F36852D2C794900420DA5 /* XCLocalSwiftPackageReference "../HandSuite" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../HandSuite;
+		};
+		FEBDF2DF2D2DCE03007205ED /* XCLocalSwiftPackageReference "Packages/RealityKitContent" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Packages/RealityKitContent;
+		};
+/* End XCLocalSwiftPackageReference section */
+	};
+	rootObject = FE5364502CF4B24F00D4C101 /* Project object */;
+}
